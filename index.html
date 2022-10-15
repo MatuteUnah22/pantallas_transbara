@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transportes Barahona Morazán</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img  class="animation__shake" src="./dist/img/ETBM3.png" alt="AdminLTELogo" height="170" width="200">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="../../dist/img/ETBM3.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">TBM</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="" class="" alt="">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Transporte Barahona Morazán</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+          with font-awesome or any other icon font library -->
+
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link act active">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Gráficas
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/charts/chartjs.html" class="nav-link">
+                  <i class="far fa-circle nav-icon text-info"></i>
+                  <p>Gráficos</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          
+          <!-- MÓDULOS -->
+          <li class="nav-item menu-open act active">
+            <a href="#" class="nav-link active">
+              <i class="fas"></i>
+              <p>
+                Módulos
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+
+              <!-- Módulo de Personas-->
+              <li class="nav-item act active">
+                <a href="#" class="nav-link">
+                  <i class=" fas "></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-rolodex" viewBox="0 0 16 16">
+                    <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                    <path d="M1 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h.5a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h.5a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H6.707L6 1.293A1 1 0 0 0 5.293 1H1Zm0 1h4.293L6 2.707A1 1 0 0 0 6.707 3H15v10h-.085a1.5 1.5 0 0 0-2.4-.63C11.885 11.223 10.554 10 8 10c-2.555 0-3.886 1.224-4.514 2.37a1.5 1.5 0 0 0-2.4.63H1V2Z"/>
+                  </svg>
+                    Personas
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="./pages/forms/Empleados.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Empleados</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./pages/forms/Usuarios.html" class="nav-link ">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Usuarios</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./pages/forms/Clientes.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Clientes</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./pages/forms/Proveedores.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Proveedores</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Módulo de Compras-->
+              <li class="nav-item act active">
+                <a href="#" class="nav-link">
+                  <i class="fas"></i>                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+                      <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                      <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                    Compras
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="./pages/forms/ComprasRegistro.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Registro de Compras</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./pages/forms/Compraspendientesxpagar.html" class="nav-link ">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Compras Pendiente a Pagar</p>
+                    </a>
+                  </li>                  
+                </ul>
+              </li>
+
+              <!-- Módulo de Servicios-->
+              <li class="nav-item act active">
+                <a href="#" class="nav-link">
+                  <i class="fas"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                    <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+                  </svg>
+                  <p>
+                    Servicios
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="./pages/forms/Servicios.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Agregar Nuevas Cargas </p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./pages/forms/CargasEntregadas.html" class="nav-link ">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Agregar Cargas Entregadas</p>
+                    </a>
+                  </li>                  
+                </ul>
+              </li>
+
+              <!-- Módulo de Facturas-->
+              <li class="nav-item act active">
+                <a href="#" class="nav-link">
+                  <i class="fas"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-receipt" viewBox="0 0 16 16">
+                    <path d="M1.92.506a.5.5 0 0 1 .434.14L3 1.293l.646-.647a.5.5 0 0 1 .708 0L5 1.293l.646-.647a.5.5 0 0 1 .708 0L7 1.293l.646-.647a.5.5 0 0 1 .708 0L9 1.293l.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .801.13l.5 1A.5.5 0 0 1 15 2v12a.5.5 0 0 1-.053.224l-.5 1a.5.5 0 0 1-.8.13L13 14.707l-.646.647a.5.5 0 0 1-.708 0L11 14.707l-.646.647a.5.5 0 0 1-.708 0L9 14.707l-.646.647a.5.5 0 0 1-.708 0L7 14.707l-.646.647a.5.5 0 0 1-.708 0L5 14.707l-.646.647a.5.5 0 0 1-.708 0L3 14.707l-.646.647a.5.5 0 0 1-.801-.13l-.5-1A.5.5 0 0 1 1 14V2a.5.5 0 0 1 .053-.224l.5-1a.5.5 0 0 1 .367-.27zm.217 1.338L2 2.118v11.764l.137.274.51-.51a.5.5 0 0 1 .707 0l.646.647.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.509.509.137-.274V2.118l-.137-.274-.51.51a.5.5 0 0 1-.707 0L12 1.707l-.646.647a.5.5 0 0 1-.708 0L10 1.707l-.646.647a.5.5 0 0 1-.708 0L8 1.707l-.646.647a.5.5 0 0 1-.708 0L6 1.707l-.646.647a.5.5 0 0 1-.708 0L4 1.707l-.646.647a.5.5 0 0 1-.708 0l-.509-.51z"/>
+                    <path d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm8-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                  <p>
+                    Facturación
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="./pages/forms/Facturacion.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Agregar Factura</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Módulo de Planillas-->
+              <li class="nav-item act active">
+                <a href="#" class="nav-link">
+                  <i class="fas"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard2-check-fill" viewBox="0 0 16 16">
+                    <path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5Z"/>
+                    <path d="M4.085 1H3.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1h-.585c.055.156.085.325.085.5V2a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 4 2v-.5c0-.175.03-.344.085-.5Zm6.769 6.854-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+                  </svg>
+                  <p>  
+                    Planillas
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="./pages/forms/Planillas.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Planilla</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Módulo de Reportes-->
+              <li class="nav-item act active">
+                <a href="#" class="nav-link">
+                  <i class="fas"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard2-pulse" viewBox="0 0 16 16">
+                    <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5h3Z"/>
+                    <path d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-12Z"/>
+                    <path d="M9.979 5.356a.5.5 0 0 0-.968.04L7.92 10.49l-.94-3.135a.5.5 0 0 0-.926-.08L4.69 10H4.5a.5.5 0 0 0 0 1H5a.5.5 0 0 0 .447-.276l.936-1.873 1.138 3.793a.5.5 0 0 0 .968-.04L9.58 7.51l.94 3.135A.5.5 0 0 0 11 11h.5a.5.5 0 0 0 0-1h-.128L9.979 5.356Z"/>
+                  </svg>
+                  <p>
+                    Reportes
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="./Reportes/RepoClientes.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Reporte de Clientes</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Reportes/RepoUsuarios.html" class="nav-link ">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Reporte de Usuarios</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Reportes/RepoProveedores.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Reporte de Proveedores</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Reportes/RepoEmpleados.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Reporte de Empleados</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Reportes/RepoComprasxFecha.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Reporte de Compras por Fecha</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Reportes/RepoComprasxProducto.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Reporte de Compras por Producto</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Reportes/RepoViajesSemanal.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Reporte de Viajes Semanal</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Reportes/RepoViajesxCliente.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Reporte de Viajes por Cliente</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Reportes/RepoFacturacionSemanal.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Reporte de Facturación Semanal</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Reportes/RepoPlanillasxFecha.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Reporte de Planilla a Pagar por Fecha</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+               <!-- Módulo de Permisos-->
+               <li class="nav-item act active">
+                <a href="#" class="nav-link">
+                  <i class="fas"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                  </svg>
+                  <p>
+                    Permisos
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="./pages/forms/Permisos.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Permisos por Tipo de Usuario</p>
+                    </a>
+                  </li>
+                </ul>
+
+                
+              </li>
+
+              <!-- Módulo de Parametrización-->
+              <li class="nav-item act">
+                <a href="#" class="nav-link">
+                  <i class="fas"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+                  </svg>
+                  <p>
+                    Parametrización
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="./Parametrización/TipoUsuario.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Tipo de Usuario</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Parametrización/TipoPersona.html" class="nav-link ">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Tipo de Persona</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Parametrización/TipoEstado.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Tipo de Estado</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Parametrización/TipoCargo.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Tipo de Cargos</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Parametrización/TipoContrato.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Tipo de Contrato</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Parametrización/Paises.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Paises</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Parametrización/Objetos.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Objetos</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Módulo de Bitacora-->
+              <li class="nav-item act active"> 
+                <a href="#" class="nav-link">
+                  <i class="fas"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>
+                    Bitácora
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="./pages/forms/Bitacora.html" class="nav-link">
+                      
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Registro de Actividad</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+
+              <!-- Módulo de Backup-->
+              <li class="nav-item act active"> 
+                <a href="#" class="nav-link">
+                  <i class="fas"></i>
+                  
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter-square-fill" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm.5 5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1 0-1zM4 8.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm2 3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    Administración
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="./pages/forms/Backup.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-info"></i>
+                      <p>Backup </p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>          
+          </li>
+
+          <!---->
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Transportes Barahona Morazán</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active"></li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content  center-align">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        
+        <!-- /.row -->
+        <!-- Main row -->
+        <div class="row">
+          <!-- Left col -->
+          
+          <!-- /.Left col -->
+          <!-- right col (We are only adding the ID to make the widgets sortable)-->
+          <section class="col-sm-8 connectedSortable">
+
+            <!-- Map card -->
+            <div class="card mb-3 bg-gradient-primary ">
+              <img src="../../dist/img/ETBM4.png" class="card-img-top" alt="..."  >
+              <div class="card-body">
+                <h5 class="card-title">Empresa Transportes Barahona Morazán </h5>
+                <p class="card-text">Las Casitas Anillo periférico <br>Honduras C,A. <br>TEL.: 9915 - 6847 / 9902 - 1924 .</p>
+                
+              </div>
+            </div>
+
+            
+            <!-- /.card -->
+
+            <!-- solid sales graph -->
+            
+            <!-- /.card -->
+            <!-- /.card -->
+          </section>
+          <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2022-2023 <a href="#">Empresa de Transportes Barahona Morazán</a>.</strong> All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 1.0.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+</body>
+</html>
