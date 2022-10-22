@@ -24,12 +24,12 @@
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
-            <a href="../../index.html" class="nav-link">Home</a>
+            <a href="../../index.html" class="nav-link">INICIO</a>
           </li>
-          <li class="nav-item d-none d-sm-inline-block">
-            <a href="#" class="nav-link">Contact</a>
-          </li>
-        </ul>
+          <!--li class="nav-item d-none d-sm-inline-block"> 
+            <a href="#" class="nav-link">Contact</a> 
+          </li> 
+        </ul> -->
 
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
@@ -153,7 +153,7 @@
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="index.html">INICIO</a></li>
                   <li class="breadcrumb-item active">Proveedores</li>
                 </ol>
               </div>
@@ -170,7 +170,22 @@
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title">Mantenimiento de Proveedores</h3>
+
+                    <!--h3 class="card-title">Buscar</h3> -->
+            <!-------------------------------------------------------------------------------------------------->
+                    <form action="../../form-result.php" method="post" target="_blank">
+
+                      <p>
+                    
+                        Buscar por nombre: <input type="search" name="busquedacodigo" pattern="[A-Za-z0-9]{8,20}" title="Un código válido consiste en una cadena con 8 a 20 caracteres, cada uno de los cuales es una letra o un dígito" required>
+                    
+                        <input type="submit" value="Buscar">
+                    
+                      </p>
+                    
+                    </form>
+              <!-------------------------------------------------------------------------------------------------->    
+              <hr>
 
                     <div class="card-tools">
                       <div class="input-group input-group-sm" style="width: 150px;">
@@ -223,11 +238,6 @@
                                             <label for="">Estatus</label>
                                             <input type="text" id="cod_estatus" class = "form-control" placeholder="Ingrese el Estatus del Provededor">
                                         </div>
-                                        <div class="col">
-                                            <label for="">Nombre Contacto</label>
-                                            <input type="text" id="nombre_conta_provee" class= "form-control" placeholder="Ingrese el Nombre del Contacto con el Proveedor">
-                                        </div>
-                                      </div>
                                     
                                       <label for="">Direccion</label>
                                       <input type="text" id="direccion_provee" class = "form-control"  placeholder = "Ingrese la Direccion del Empleado">
@@ -253,74 +263,59 @@
                     <table class="table table-hover text-nowrap">
                       <thead>
                         <tr>
-                          <th>Código Proveedor</th>
                           <th>Nombre Proveedor</th>                          
-                          <th>ID Proveedor</th>
+                          <th>RTN</th>
                           <th>Dirección</th>
-                          <th>Teléfono</th>                          
                           <th>Email</th>
-                          <th>Nombre Contacto</th>
-                          <th>Estatus</th>
-                          <th>Fecha Creación</th>
+                          <th>Teléfono</th>                          
+                          <th>Fecha de registro</th>
                           <th>Acciones</th>                         
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>183</td>
-                          <td>Boca Delí</td>
-                          <td>021215845</td>
+                          <td>Sublimax</td>
+                          <td>02091987003862</td>
                           <td>El Carrizal</td>
-                          <td>2222-2222</td>
                           <td>google@gmail.com</td>
-                          <td>John Mcklein Gonsalez Yeestas</td>
-                          <td>B</td>
-                          <td>11-7-2014</td>
+                          <td>2222-2222</td>
+                          <td>21-10-2022</td>
                           <td>
                             <button class="btn btn-outline-dark" onclick=""><i class="fas fa-edit"></i></button>
                             <button class="btn btn-outline-danger" onclick=""><i class="fas fa-trash"></i></button>
                           </td>
                         </tr>
                         <tr>
-                          <td>183</td>
-                          <td>Extra</td>
-                          <td>024715845</td>
+                          <td>Claro</td>
+                          <td>02091987003863</td>
                           <td>El Pedregal</td>
-                          <td>2222-2222</td>
                           <td>google@gmail.com</td>
-                          <td>John Doe Ramirez Hernandez</td>
-                          <td>B</td>
-                          <td>11-7-2014</td>
+                          <td>2222-2222</td>
+                          <td>21-10-2022</td>
                           <td>
                             <button class="btn btn-outline-dark" onclick=""><i class="fas fa-edit"></i></button>
                             <button class="btn btn-outline-danger" onclick=""><i class="fas fa-trash"></i></button>
                           </td>
                         </tr>
                         <tr>
-                          <td>183</td>
-                          <td>Yumis</td>
-                          <td>024715845</td>
+                          <td>Tigo</td>
+                          <td>02091987003864</td>
                           <td>Cerro Grande</td>
-                          <td>2222-2222</td>
                           <td>google@gmail.com</td>
-                          <td>John Mcklein Gonsalez Yeestas</td>
-                          <td>B</td>
-                          <td>11-7-2014</td>
+                          <td>2222-2222</td>
+                          <td>21-10-2022</td>
                           <td>
                             <button class="btn btn-outline-dark" onclick=""><i class="fas fa-edit"></i></button>
                             <button class="btn btn-outline-danger" onclick=""><i class="fas fa-trash"></i></button>
                           </td>
                         </tr>
                         <tr>
-                          <td>183</td>
-                          <td>Bimbo</td>
-                          <td>024715445</td>
+                          <td>La colonia</td>
+                          <td>02091987003868</td>
                           <td>Rio Grande</td>
-                          <td>2222-2222</td>
                           <td>google@gmail.com</td>
-                          <td>John Doe Gonsalez Ramirez</td>
-                          <td>B</td>
-                          <td>11-7-2014</td>
+                          <td>2222-2222</td>
+                          <td>21-10-2022</td>
                           <td>
                             <button class="btn btn-outline-dark" onclick=""><i class="fas fa-edit"></i></button>
                             <button class="btn btn-outline-danger" onclick=""><i class="fas fa-trash"></i></button>
