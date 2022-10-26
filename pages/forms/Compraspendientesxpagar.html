@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Transportes Barahona Morazán</title>
-
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -24,49 +23,51 @@
           <li class="nav-item">
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
           </li>
-          <li class="nav-item d-none d-sm-inline-block">
-            <a href="../../index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item d-none d-sm-inline-block">
-            <a href="#" class="nav-link">Contact</a>
-          </li>
+          
+          <!--li class="nav-item d-none d-sm-inline-block"> 
+            <a href="#" class="nav-link">Contact</a> 
+          </li> -->
         </ul>
 
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
-          <!-- Navbar Search -->
-          <li class="nav-item">
-            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-              <i class="fas fa-search"></i>
-            </a>
-            <div class="navbar-search-block">
-              <form class="form-inline">
-                <div class="input-group input-group-sm">
-                  <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-                  <div class="input-group-append">
-                    <button class="btn btn-navbar" type="submit">
-                      <i class="fas fa-search"></i>
-                    </button>
-                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                      <i class="fas fa-times"></i>
-                    </button>
+            <!-- Navbar Search -->
+            <!--<li class="nav-item">
+              <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                <i class="fas fa-search"></i>
+              </a>
+              <div class="navbar-search-block">
+                <form class="form-inline">
+                  <div class="input-group input-group-sm">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                      <button class="btn btn-navbar" type="submit">
+                        <i class="fas fa-search"></i>
+                      </button>
+                      <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                        <i class="fas fa-times"></i>
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </form>
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-              <i class="fas fa-th-large"></i>
-            </a>
-          </li>
-        </ul>
+                </form>
+              </div>
+            </li> -->
+  
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="../../index.html" class="nav-link">INICIO</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                <i class="fas fa-expand-arrows-alt"></i>
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                <i class="fas fa-th-large"></i>
+              </a>
+            </li> -->
+          </ul>
       </nav>
       <!-- /.navbar -->
 
@@ -91,16 +92,6 @@
           </div>
 
           <!-- SidebarSearch Form -->
-          <div class="form-inline">
-            <div class="input-group" data-widget="sidebar-search">
-              <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-              <div class="input-group-append">
-                <button class="btn btn-sidebar">
-                  <i class="fas fa-search fa-fw"></i>
-                </button>
-              </div>
-            </div>
-          </div>
 
           <!-- Sidebar Menu -->
           <nav class="mt-2">
@@ -111,15 +102,27 @@
                 <a href="#" class="nav-link active">
                   <i class=" fas"></i>
                   <p>
-                    Compras
+                    Cuentas por pagar
                     <i class="right fas fa-angle-left"></i>
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./ComprasRegistro.html" class="nav-link ">
+                    <a href="./Empleados.html" class="nav-link ">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Registro de Compras</p>
+                      <p>Empleados</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Usuarios.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Usuarios</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Clientes.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Clientes</p>
                     </a>
                   </li>
                 </ul>
@@ -138,14 +141,8 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1>Compras Pendientes por Pagar</h1>
-              </div>
-              <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                  <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
-                  <li class="breadcrumb-item active">Compras al Crédito</li>
-                </ol>
-              </div>
+                <h1><strong>Cuentas por pagar</strong></h1>
+              </div>           
             </div>
           </div><!-- /.container-fluid -->
         </section>
@@ -153,160 +150,192 @@
         <!-- Main content -->
         <section class="content">
           <div class="container-fluid">
-            <!-- EMPLEADOS -->
+            <!-- CLIENTES -->
             <!-- /.row -->
             <div class="row">
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title">Lista de Compras por Pagar</h3>
+                    <!--h3 class="card-title">Buscar</h3> -->
+                    <!-------------------------------------------------------------------------------------------------->      
+                    <nav class="navbar navbar-light bg-light">
+                      <div class="container-fluid">
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                          <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                      </div>
+                    </nav>
+                    <!-------------------------------------------------------------------------------------------------->    
+                    <hr>
 
                     <div class="card-tools">
                       <div class="input-group input-group-sm" style="width: 150px;">
-                        <div class="btnagregar">
-                          <button type="button" class="btn btn-primary float-right" data-bs-toggle="modal" data-bs-target="#miModal" ><i class="fas fa-plus"></i> Registrar Compra</button>
-                          
-                          <!-- CODIGO PARA MODULAR LOS FORMS-->
+                        <button type="button" class="btn btn-primary float-right" data-bs-toggle="modal" data-bs-target="#miModal" ><i class="fas fa-plus"></i> Agregar Compra</button>
+                      </div>
 
-                          <div class="modal fade" id="miModal" tabindex="-1" arial-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static" >
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="modalTitle"> Registrar Compras Pendientes por Pagar</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                  
-                                  <!-- AGREGAR REGISTRO DE COMPRAS A PAGAR -->
-                                  <div class="formulario">
-                                    <div class="row">
-                                      <div class="col-12">
-                                        <h3></h3>
+                      <!-- FORMULARIO PARA AGREGAR -->
+                      <div class="modal fade" id="miModal" tabindex="-1" arial-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static" >
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="modalTitle" >Agregar Cuenta</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="formulario">
+                                <div class="row">
+                                  <div class="col-12">
+                                    <form class="personas">
+                                        <div class="row g-3">
+                                          <div class="col">
+                                            <label for="">Fecha de Compra</label> 
+                                            <input type="text" name="compra" id="nombres" class="form-control" placeholder="Ingrese la fecha de compra" aria-label="compra">
+                                          </div>
+                                          <div class="col">
+                                            <label for="">Proveedor</label> 
+                                            <input type="text" name="proveedor" id="apellidos" class="form-control" placeholder="Ingrese el proveedor" aria-label="proveedor">
+                                          </div>
+                                        </div>
+                                        <div class="row g-3">
+                                          <div class="col">
+                                            <label for="">Monto a pagar</label> 
+                                            <input type="text" name="monto" id="dni" class="form-control" placeholder=" Ingrese monto a pagar." aria-label="monto">
+                                          </div>
+                                          <div class="col">
+                                              <label for="">Estatus</label>
+                                              <input type="text" name="Estatus" id="genero" class = "form-control" placeholder="Ingrese el Estatus ('Pagado', 'Pendiente').">
+                                          </div>
+                                        </div>
                                         <br>
-                                      </div>
-                                      <div class="col-12">
-                                        <form class="compras">
-                                          <div class="row g-3">
-                                            <div class="col">
-                                              <label for="">Fecha de Compra</label>
-                                              <input type="date" id="fecha_ingreso_emple" class = "form-control">
-                                            </div>
-                                            <div class="col">
-                                              <label for="">Nombre de la Empresa</label> 
-                                              <input type="text" id="primer_nombre" class="form-control" placeholder="Ingrese el nombre de la Empresa." aria-label="Primer Nombre">
-                                            </div>
+                                         <div class="row g-3">
+                                          <div class="col">
+                                            <label for="">Fecha de pago</label>
+                                            <input type="date" name="fec_pago" id="fec_nac" class = "form-control"  placeholder = "Ingrese la fecha de pago.">
                                           </div>
-                                          <div class="row g-3">
-                                            <div class="col">
-                                              <label for="">Artículo</label> 
-                                              <input type="text" id="segundo_nombre" class="form-control" placeholder="Ingrese el Artículo." aria-label="Segundo nombre">
-                                            </div>
-                                            <div class="col">
-                                              <label for="">Cantidad</label> 
-                                              <input type="text" id="segundo_apelido_emple" class="form-control" placeholder="Ingrese la Cantidad.">
-                                            </div>
+                                        </div>
+                                          <div class="col">
+                                            <label for="">Fecha adición</label>
+                                            <input type="date" name="fec_adicion" id="fec_adicion" class = "form-control"  placeholder = "Ingrese la fecha de adición.">
                                           </div>
-                                          <br>
-                                          <div class="row g-3">
-                                            <div class="col">
-                                              <label for="">Código de Pago</label>
-                                              <input type="text" id="ident_empleado" class = "form-control" placeholder="Ingrese el Código de Pago.">
-                                            </div>
-                                            <div class="col">
-                                              <label for="">Pago Restante</label>
-                                              <input type="text" id="telefono_emple" class= "form-control" placeholder="Ingrese el total de Pago Restante.">
-                                            </div>
-                                          </div>
-                                          <br> 
+                                        </div>
+                                        <br>
+                                        
+                                        <div class="row g-3">
+                                          <div class="col">
+                                            <label for="">Usuario adición</label>
+                                            <input type="text" name="usr_adicion" id="usr_adicion" class = "form-control" placeholder="Ingrese el Usuario de adición.">
+                                          </div>                                  
+                                        </div>
+                                        
+                                        <div class="modal-footer">
                                           <div class="btnagregar">
-                                            <input type="submit" id="btn_agregar" onclick="Agregarfactura()" value="Compra a Pagar" class="btn btn-success">
+                                            <input  type="submit" id="btn_agregar"  value="Agregar Persona" class = "btn btn-success">
                                           </div>
-                                          <hr>
-                                        </form>
-                                      </div>
-                                    </div>
-                                  </div> 
+                                        </div>
+                                    </form>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <!-- /CODIGO PARA MODULAR LOS FORMS-->
-                        </div>                        
+                        </div>
                       </div>
+                      <!-- FIN FORMULARIO PARA AGREGAR -->
                     </div>
                   </div>
+
                   <!-- /.card-header -->
                   <div class="card-body table-responsive p-0">
                     <table class="table table-hover text-nowrap">
                       <thead>
                         <tr>
-                          <th>Fecha</th>
-                          <th>Nombre de la Empresa</th>
-                          <th>Artículo</th>
-                          <th>Cantidad</th>
-                          <th>Codigo de pago</th>
-                          <th>Pago restante</th>
+                          <th>No.</th>
+                          <th>Fecha de Compra</th>
+                          <th>Proveedor</th>
+                          <th>Monto a pagar</th>
+                          <th>Estatus</th>
+                          <th>Fecha de pago</th>
+                          <th>Usuario adición</th>
                           <th>Acciones</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
+                          <td>1</td>
                           <td>11-7-2014</td>
-                          <td>Texaco</td>
-                          <td>Aceite</td>
-                          <td>100</td>
-                          <td>001</td>
-                          <td>1000.00</td>
+                          <td>Sublimax</td>
+                          <td>20000</td>
+                          <td>Pagado</td>
+                          <td>10-15-2022</td>
+                          <td>Henry</td>
                           <td>
                             <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
                             <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
                           </td>                          
                         </tr>
                         <tr>
+                          <td>2</td>
                           <td>11-7-2014</td>
-                          <td>Texaco</td>
-                          <td>Aceite</td>
-                          <td>100</td>
-                          <td>001</td>
-                          <td>1000.00</td>
+                          <td>Tubelitle</td>
+                          <td>10000</td>
+                          <td>Pendiente</td>
+                          <td>12-15-2022</td>
+                          <td>Henry</td>
                           <td>
                             <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
                             <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
-                          </td>   
+                          </td> 
                         </tr>
                         <tr>
+                          <td>3</td>
                           <td>11-7-2014</td>
-                          <td>Texaco</td>
-                          <td>Aceite</td>
-                          <td>100</td>
-                          <td>001</td>
-                          <td>1000.00</td>
+                          <td>Ecosuples</td>
+                          <td>2000</td>
+                          <td>Pendiente</td>
+                          <td>12-15-2022</td>
+                          <td>Henry</td>
                           <td>
                             <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
                             <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
-                          </td>  
+                          </td> 
                         </tr>
                         <tr>
+                          <td>4</td>
                           <td>11-7-2014</td>
-                          <td>Texaco</td>
-                          <td>Aceite</td>
-                          <td>100</td>
-                          <td>001</td>
-                          <td>1000.00</td>
+                          <td>Ecotran</td>
+                          <td>90000</td>
+                          <td>Pendiente</td>
+                          <td>12-30-2022</td>
+                          <td>Henry</td>
                           <td>
-                            <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
-                            <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
-                          </td>  
+                          <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
+                          <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
+                  <br>
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Siguiente</a>
+                      </li>
+                    </ul>
+                  </nav>
                   <!-- /.card-body -->
                 </div>
                 <!-- /.card -->
               </div>
             </div>
-            <br>       
+            <hr>
           </div><!-- /.container-fluid -->
         </section>
         <!-- /.content -->
@@ -314,7 +343,7 @@
       <!-- /.content-wrapper -->
       <footer class="main-footer">
         <div class="float-right d-none d-sm-block">
-          <b>Version</b> 1.0.0
+        <b>Version</b> 1.0.0
         </div>
         <strong>Copyright &copy; 2022-2023 <a href="#">Empresa de Transportes Barahona Morazán</a>.</strong> All rights reserved.
       </footer>
@@ -326,10 +355,7 @@
       <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
     <!-- jQuery -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
@@ -339,4 +365,5 @@
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
   </body>
+    
 </html>
