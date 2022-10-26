@@ -22,18 +22,18 @@
           <li class="nav-item">
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
           </li>
-          <li class="nav-item d-none d-sm-inline-block">
+          <!-- <li class="nav-item d-none d-sm-inline-block">
             <a href="../../index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
             <a href="#" class="nav-link">Contact</a>
-          </li>
+          </li> -->
         </ul>
 
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
           <!-- Navbar Search -->
-          <li class="nav-item">
+          <!--<li class="nav-item">
             <a class="nav-link" data-widget="navbar-search" href="#" role="button">
               <i class="fas fa-search"></i>
             </a>
@@ -52,6 +52,10 @@
                 </div>
               </form>
             </div>
+          </li> -->
+
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="../../index.html" class="nav-link">INICIO</a>
           </li>
 
           <li class="nav-item">
@@ -59,11 +63,11 @@
               <i class="fas fa-expand-arrows-alt"></i>
             </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
               <i class="fas fa-th-large"></i>
             </a>
-          </li>
+          </li> -->
         </ul>
       </nav>
       <!-- /.navbar -->
@@ -148,14 +152,14 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1>Empleados</h1>
+                <h1><strong>Empleados</strong></h1>
               </div>
-              <div class="col-sm-6">
+              <!-- <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                   <li class="breadcrumb-item active">Empleados</li>
                 </ol>
-              </div>
+              </div> -->
             </div>
           </div><!-- /.container-fluid -->
         </section>
@@ -169,115 +173,95 @@
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title">Mantenimiento de Empleados</h3>
+                    <!-- <h3 class="card-title">Mantenimiento de Empleados</h3> -->
+
+                    <!-------------------------------------------------------------------------------------------------->      
+                    <nav class="navbar navbar-light bg-light">
+                      <div class="container-fluid">
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                          <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                      </div>
+                    </nav>
+                    <!-------------------------------------------------------------------------------------------------->    
+                    <hr>
 
                     <div class="card-tools">
                       <div class="input-group input-group-sm" style="width: 150px;">
-                        <div class="btnagregar">
-                          <button type="button" class="btn btn-primary float-right" data-bs-toggle="modal" data-bs-target="#miModal" ><i class="fas fa-plus"></i> Agregar Empleado</button>             
-                        
+                        <button type="button" class="btn btn-primary float-right" data-bs-toggle="modal" data-bs-target="#miModal" ><i class="fas fa-plus"></i> Agregar Empleado</button>
+                      </div>
 
-                          <!-- CODIGO PARA MODULAR LOS FORMS-->
-                    
-                          <div class="modal fade" id="miModal" tabindex="-1" arial-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static" >
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="modalTitle" >Agregar Nuevo Empleado</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                  
+                      <!-- FORMULARIO PARA AGREGAR -->
                 
-                                  <div class="formulario">
-                                    <div class="row">
-                                      <div class="col-12">
-                                        <h3></h3>
-                                        <hr>
+                      <div class="modal fade" id="miModal" tabindex="-1" arial-hidden="true" aria-labelledby="modalTitle" data-backdrop="static" >
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="modalTitle" >Agregar Nuevo Empleado</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="formulario">
+                                <div class="row">
+                                  <div class="col-12">
+                                    <h3></h3>
+                                    <hr>
+                                  </div>
+                                  <div class="col-12">
+                                    <form class="empleado">
+                                      <div class="row g-3">
+                                          <div class="col">
+                                            <label for="">Código persona</label> 
+                                            <input type="number" id="cod_persona" class="form-control" placeholder="Ingrese el Código de persona." aria-label="Codigo persona">
+                                          </div>
+                                          <div class="col">
+                                            <label for="">Código cargo</label> 
+                                            <input type="text" id="cod_cargo" class="form-control" placeholder=" Ingrese el Código cargo" aria-label="Codigo cargo">
+                                          </div>
                                       </div>
-                                      <div class="col-12">
-                                        <form class="empleado"> 
-
-                                          <div class="row g-3">
-                                            <div class="col">
-                                              <label for="">Primer Nombre</label> 
-                                              <input type="text" id="primer_nombre" class="form-control" placeholder="Ingrese el Primer Nombre del Empleado" aria-label="Primer Nombre">
-                                            </div>
-                                            <div class="col">
-                                              <label for="">Segundo Nombre</label> 
-                                              <input type="text" id="segundo_nombre" class="form-control" placeholder=" Ingrese el Segundo Nombre del Empleado" aria-label="Segundo nombre">
-                                            </div>
+              
+                                      <div class="row g-3">
+                                          <div class="col">
+                                              <label for="">Código tipo contrato</label>
+                                              <input type="text" id="cod_tipo_contrato" class = "form-control" placeholder="Ingrese el Código tipo contrato.">
                                           </div>
-                
-                                          <div class="row g-3">
-                                            <div class="col">
-                                                <label for="">Primer Apellido</label>
-                                                <input type="text" id="primer_apellido_emple" class = "form-control" placeholder="Ingrese el Perimer Apellido del Empleado">
-                                            </div>
-                                            <div class="col">
-                                                <label for="">Segundo Apellido</label> 
-                                                <input type="text" id="segundo_apelido_emple" class="form-control" placeholder="Ingrese el Segundo Apelido del Empleado">
-                                            </div>
+                                          <div class="col">
+                                              <label for="">Fecha ingreso</label>
+                                              <input type="date" id="fec_ingreso" class = "form-control" placeholder="Ingrese la fecha de ingreso del Empleado.">
                                           </div>
-                                          <br>
-                                          
-                                          <div class="row g-3">
-                                            <div class="col">
-                                                <label for="">ID Empleado</label>
-                                                <input type="text" id="ident_empleado" class = "form-control" placeholder="Ingrese el Numero de Identidad del Empleado">
-                                            </div>
-                                            <div class="col">
-                                                <label for="">Telefono</label>
-                                                <input type="text" id="telefono_emple" class= "form-control" placeholder="Ingrese el Telefono del Empleado">
-                                            </div>
-                                          </div>
-                                          
-                                          <div class="row g-3">
-                                            <div class="col">
-                                                <label for="">Email</label>
-                                                <input type="text" id="email_emple" class = "form-control"  placeholder = "Ingrese el Correo Electronico del Empleado">
-                                            </div>
-                                            <div class="col">
-                                                <label for="">Estado Civil</label>
-                                                <input type="text" id="cod_estado_civil" class = "form-control"  placeholder = "Ingrese el Estado Civil del Empleado">
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <br>
                                         
-                                          <label for="">Direccion</label>
-                                          <input type="text" id="direccion_emple" class = "form-control"  placeholder = "Ingrese la Direccion del Empleado">
-                                          <br>
-                                            
-                                          <div class="row g-3">
-                                              <div class="col">
-                                                <label for="">Estado</label>
-                                                <input type="text" id="cod_estatus" class="form-control" placeholder="Ingrese el Estado del empleado">
-                                              </div>
-                                              <div class="col">
-                                                <label for="">Fecha de Ingreso</label>
-                                                <input type="date" id="fecha_ingreso_emple" class = "form-control"  >
-                                              </div>
-                                            </div>
-                                          
-                                            <div class="row g-3">
-                                              <div class="col">
-                                                <label for="">Cargo</label>
-                                                <input type="text" id="cod_cargo_emple" class="form-control" placeholder="Ingrese el Cargo del Empleado">
-                                              </div>
-                                              <div class="col">
-                                                <label for="">Tipo de Contrato</label>
-                                                <input type="text" id="cod_tipo_contra" class="form-control" placeholder="Ingrese el Tipo de Contrato del Empleado">
-                                              </div>
-                                            </div>                                          <br>
-
-                                          <div class="modal-footer">
-                                            <div class="btnagregar">
-                                              <input type="submit" id="btn_agregar"  value="Agregar Empleado" class = "btn btn-success">
-                                            </div>                                            
+                                      <div class="row g-3">
+                                          <div class="col">
+                                              <label for="">Fecha egreso</label>
+                                              <input type="date" id="fec_egreso" class= "form-control">
                                           </div>
-                                          
-                                        </form>
+                                          <div class="col">
+                                              <label for="">Salario empleado (Lps)</label>
+                                              <input type="number" id="sal_empleado" class = "form-control"  placeholder = "Ingrese el Salario del Empleado">
+                                          </div>
                                       </div>
-                                    </div>
+                                      
+                                      <div class="row g-3">
+                                          <div class="col">
+                                              <label for="">Fecha adición</label>
+                                              <input type="date" id="fec_adicion" class = "form-control">
+                                          </div>
+                                          <div class="col">
+                                              <label for="">Usuario adición</label>
+                                              <input type="text" name="usr_adicion" id="usr_adicion" class = "form-control" placeholder="Ingrese el Usuario de adición.">
+                                          </div>
+                                      </div>
+                                      <br>
+
+                                      <div class="modal-footer">
+                                        <div class="btnagregar">
+                                          <input type="submit" id="btn_agregar"  value="Agregar Empleado" class = "btn btn-success">
+                                        </div>                                            
+                                      </div>
+                                    </form>
                                   </div>
                                 </div>
                               </div>
@@ -285,115 +269,104 @@
                           </div>
                         </div>
                       </div>
-
                     </div>
                   </div>
+
                   <!-- /.card-header -->
                   <div class="card-body table-responsive p-0">
                     <table class="table table-hover text-nowrap">
                       <thead>
                         <tr>
-                          <th>Código Empleado</th>
-                          <th>Primer Nombre</th>
-                          <th>Segundo Nombre</th>
-                          <th>Primer Apellido</th>
-                          <th>Segundo Apellido</th>
-                          <th>Identidad</th>
-                          <th>Teléfono</th>
-                          <th>Dirección</th>
-                          <th>Email</th>
-                          <th>Estado Civil</th>
-                          <th>Estado</th>
-                          <th>Fecha Ingreso</th>
-                          <th>Cargo</th>                      
-                          <th>Tipo Contrato</th>
+                          <th>No.</th>
+                          <th>Código persona</th>
+                          <th>Código cargo</th>
+                          <th>Código tipo contrato</th>
+                          <th>Fecha ingreso</th>
+                          <th>Fecha egreso</th>
+                          <th>Salario empleado (Lps)</th>
+                          <th>Fecha adición</th>
+                          <th>Usuario adicion</th>
                           <th>Acciones</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>183</td>
-                          <td>John</td>
-                          <td>Mcklein</td>
-                          <td>Gonsalez</td>
-                          <td>Yeestas</td>
-                          <td>0021-1995-22468</td>
-                          <td>2222-2222</td>
-                          <td>Bacon ipsum kajsdkja askjha kjhskdj kjasda</td>
-                          <td>google@gmail.com</td>
-                          <td>Casado</td>
-                          <td>Ninguma</td>
-                          <td>11-7-2014</td>
-                          <td>Gerente IT</td>
-                          <td>Permanente</td>
+                          <td>01</td>
+                          <td>01</td>
+                          <td>01</td>
+                          <td>01</td>
+                          <td>2020-01-01</td>
+                          <td>null</td>
+                          <td>16,000</td>
+                          <td>2020-01-01</td>
+                          <td>damat</td>
                           <td>
-                            <button class="btn btn-outline-dark" onclick=""><i class="fas fa-edit"></i></button>
-                            <button class="btn btn-outline-danger" onclick=""><i class="fas fa-trash"></i></button>
+                            <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>                    
                           </td>
                         </tr>
                         <tr>
-                          <td>183</td>
-                          <td>John </td>
-                          <td>Doe</td>
-                          <td>Ramirez</td>
-                          <td>Hernandez</td>
-                          <td>0021-1995-22468</td>
-                          <td>2222-2222</td>
-                          <td>Bacon ipsum kajsdkja askjha kjhskdj kjasda</td>
-                          <td>google@gmail.com</td>
-                          <td>Soltero</td>
-                          <td>Ninguma</td>
-                          <td>11-7-2014</td>
-                          <td>Gerente</td>
-                          <td>Medio Tiempo</td>
+                          <td>02</td>
+                          <td>01</td>
+                          <td>01</td>
+                          <td>01</td>
+                          <td>2020-01-01</td>
+                          <td>null</td>
+                          <td>16,000</td>
+                          <td>2020-01-01</td>
+                          <td>damat</td>
                           <td>
-                            <button class="btn btn-outline-dark" onclick=""><i class="fas fa-edit"></i></button>
-                            <button class="btn btn-outline-danger" onclick=""><i class="fas fa-trash"></i></button>
+                            <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>                    
                           </td>
                         </tr>
                         <tr>
-                          <td>183</td>
-                          <td>John</td>
-                          <td>Mcklein</td>
-                          <td>Gonsalez</td>
-                          <td>Yeestas</td>
-                          <td>0021-1995-22468</td>
-                          <td>2222-2222</td>
-                          <td>Bacon ipsum kajsdkja askjha kjhskdj kjasda</td>
-                          <td>google@gmail.com</td>
-                          <td>Casado</td>
-                          <td>Ninguma</td>
-                          <td>11-7-2014</td>
-                          <td>Gerente IT</td>
-                          <td>Permanente</td>
+                          <td>03</td>
+                          <td>01</td>
+                          <td>01</td>
+                          <td>01</td>
+                          <td>2020-01-01</td>
+                          <td>null</td>
+                          <td>16,000</td>
+                          <td>2020-01-01</td>
+                          <td>damat</td>
                           <td>
-                            <button class="btn btn-outline-dark" onclick=""><i class="fas fa-edit"></i></button>
-                            <button class="btn btn-outline-danger" onclick=""><i class="fas fa-trash"></i></button>
+                            <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>                    
                           </td>
                         </tr>
                         <tr>
-                          <td>183</td>
-                          <td>John </td>
-                          <td>Doe</td>
-                          <td>Ramirez</td>
-                          <td>Hernandez</td>
-                          <td>0021-1995-22468</td>
-                          <td>2222-2222</td>
-                          <td>Bacon ipsum kajsdkja askjha kjhskdj kjasda</td>
-                          <td>google@gmail.com</td>
-                          <td>Soltero</td>
-                          <td>Ninguma</td>
-                          <td>11-7-2014</td>
-                          <td>Gerente</td>
-                          <td>Medio Tiempo</td>
+                          <td>04</td>
+                          <td>01</td>
+                          <td>01</td>
+                          <td>01</td>
+                          <td>2020-01-01</td>
+                          <td>null</td>
+                          <td>16,000</td>
+                          <td>2020-01-01</td>
+                          <td>damat</td>
                           <td>
-                            <button class="btn btn-outline-dark" onclick=""><i class="fas fa-edit"></i></button>
-                            <button class="btn btn-outline-danger" onclick=""><i class="fas fa-trash"></i></button>
+                            <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>                    
                           </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
+                  <br>
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Siguiente</a>
+                      </li>
+                    </ul>
+                  </nav>
                   <!-- /.card-body -->
                 </div>
                 <!-- /.card -->
