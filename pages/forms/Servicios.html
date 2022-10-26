@@ -116,14 +116,14 @@
                     <i class="right fas fa-angle-left"></i>
                   </p>
                 </a>
-                <ul class="nav nav-treeview">
+                <!-- <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../forms/CargasEntregadas.html" class="nav-link">
+                    <a href="../forms/EnviosEntregados.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Agregar Cargas Entregadas</p>
+                      <p>Agregar a Envios Entregadas</p>
                     </a>
                   </li>
-                </ul>
+                </ul>-->
               </li>     
             </ul>
           </nav>
@@ -144,7 +144,7 @@
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                   <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
-                  <li class="breadcrumb-item active">Agregar Cargas</li>
+                  <li class="breadcrumb-item active">Crear Nuevo Envio</li>
                 </ol>
               </div>
             </div>
@@ -159,12 +159,12 @@
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title">Lista de Cargas a enviar</h3>
+                    <h3 class="card-title">Lista de Envios</h3>
 
                     <div class="card-tools">
                       <div class="input-group input-group-sm" style="width: 150px;">
                         <div class="btnagregar">
-                          <button type="button" class="btn btn-primary float-right" data-bs-toggle="modal" data-bs-target="#miModal" ><i class="fas fa-plus"></i> Agregar Carga</button>
+                          <button type="button" class="btn btn-primary float-right" data-bs-toggle="modal" data-bs-target="#miModal" ><i class="fas fa-plus"></i> Agregar Nuevo Envio</button>
                           
                           <!-- CODIGO PARA MODULAR LOS FORMS-->
 
@@ -172,44 +172,63 @@
                             <div class="modal-dialog modal-dialog-centered modal-lg">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="modalTitle">Agregar Nuevas Cargas</h5>
+                                  <h5 class="modal-title" id="modalTitle">Agregar Nuevo Envio</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                   
-                                  <!-- AGREGAR NUEVA CARGA A ENVIAR -->
+                                  <!-- AGREGAR NUEVO ENVIO -->
                                   <div class="formulario">
                                     <div class="row">
                                       <div class="col-12">
                                         
                                       </div>
                                       <div class="col-12">
-                                        <form class="servicio"> 
-                                          <div class="row g-3">
-                                            <div class="col">
-                                              <label for="">Cantidad</label>
-                                              <input type="text" id="cantidad" class="form-control" placeholder="Ingrese la cantidad exacta de la carga">
+                                        <form class="servicio">
+
+                                          <div class="col">
+                                            <label for="">Codigo del Cliente</label>
+                                            <input type="text" id="cod_cliente" class="form-control" placeholder="Ingrese el codigo del cliente">
+                                          </div> 
+                                          <div class="col">
+                                            <label for="">Codigo del Vehiculo</label>
+                                            <input type="text" id="cod_vehiculo" class="form-control" placeholder="Ingrese el codigo del Vehiculo">
+                                          </div> 
+                                          <div class="col">
+                                            <label for="">Codigo de Ruta</label>
+                                            <input type="text" id="cod_ruta" class="form-control" placeholder="Ingrese el codigo de Ruta">
+                                          </div> 
+                                          <div class="col">
+                                              <label for="">Fecha de Envio</label>
+                                              <input type="date" id="fec_de_envio" class = "form-control"  >
                                             </div>
-                                            <div class="col">
-                                              <label for="">Peso (Kg)</label>
-                                              <input type="text" id="peso_carga_agreg" class="form-control" placeholder="Ingrese el peso en Kilos">
-                                            </div>
-                                          </div>                  
+                                          </div>
+                                          <div class="col">
+                                            <label for="">Fecha de Entrega</label>
+                                            <input type="date" id="fec_de_entrega" class = "form-control"  >
+                                          </div>
+                                        </div>                
                                           <div class="row g-3">                      
                                             <div class="col">
                                               <label for="">Descripción</label>
-                                              <input type="text" id="descripcion" class="form-control" placeholder="Ingrese la descripción de la carga">
-                                            </div>                      
+                                              <input type="text" id="descripcion" class="form-control" placeholder="Ingrese la descripción del envio">
+                                            </div> 
                                             <div class="col">
-                                              <label for="">Fecha de Ingreso</label>
-                                              <input type="date" id="fecha_carga_enviar" class = "form-control"  >
-                                            </div>
-                                          </div>
+                                              <label for="">Peso (Kg)</label>
+                                              <input type="text" id="peso" class="form-control" placeholder="Ingrese el peso en Kilos">
+                                            </div> 
+                                            <div class="row g-3">
+                                              <div class="col">
+                                                <label for="">Cantidad</label>
+                                                <input type="text" id="cantidad" class="form-control" placeholder="Ingrese la cantidad exacta del envio">
+                                              </div>
+                                            </div>                      
+                                            
                                           <br> 
                                           
                                           <div class="modal-footer">
                                             <div class="btnagregar">
-                                              <input type="submit" id="btn_agregar"  value="Agregar Carga" class = "btn btn-success">
+                                              <input type="submit" id="btn_agregar"  value="Agregar Envio" class = "btn btn-success">
                                             </div>
                                           </div>
                                         </form>
@@ -230,55 +249,83 @@
                     <table class="table table-hover text-nowrap">
                       <thead>
                         <tr>
-                          <th>Código Carga</th>
-                          <th>Cantidad</th>
-                          <th>Peso (Kg)</th>
-                          <th>Descripción</th>
+
+                          <th>Código Envio</th>
+                          <th>Cliente</th>
+                          <th>Vehiculo</th>
+                          <th>Ruta</th>
                           <th>Fecha de Envío</th>
+                          <th>Fecha de Entrega</th>
+                          <th>Descripción</th>
+                          <th>Peso (Kg)</th>
+                          <th>Cantidad</th>
                           <th>Acciones</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
+                          <tr>
                           <td>183</td>
-                          <td>100</td>
-                          <td>152</td>
+                          <td>nancy</td>
+                          <td>camion kia</td>
+                          <td>comayagua</td>
+                          <td>11-7-2022</td>
+                          <td>15-7-2022</td>
                           <td>Churros de la empresa Yumis</td>
-                          <td>11-7-2014</td>
+                          <td>100</td>
+                          <td>500</td>
+                          
                           <td>
                             <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><ii class="fas fa-edit"></ii></button>
                             <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><ii class="fas fa-trash"></ii></button>
                           </td>
                         </tr>
                         <tr>
-                            <td>183</td>
-                            <td>100</td>
-                            <td>152</td>
-                            <td>Churros de la empresa Boca Deli</td>
-                            <td>11-7-2014</td>
-                            <td>
+                          <tr>
+                          <td>180</td>
+                          <td>gaby</td>
+                          <td>camion</td>
+                          <td>olancho</td>
+                          <td>11-7-2022</td>
+                          <td>16-7-2022</td>
+                          <td>Churros de la empresa Yumis</td>
+                          <td>100</td>
+                          <td>500</td>
+                          
+                          <td>
                               <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><ii class="fas fa-edit"></ii></button>
                               <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><ii class="fas fa-trash"></ii></button>
                             </td>
                         </tr>
                         <tr>
-                            <td>183</td>
-                            <td>100</td>
-                            <td>152</td>
-                            <td>Churros de la empresa Extra</td>
-                            <td>11-7-2014</td>
-                            <td>
+                            <tr>
+                          <td>183</td>
+                          <td>nancy</td>
+                          <td>camion kia</td>
+                          <td>comayagua</td>
+                          <td>11-7-2022</td>
+                          <td>15-7-2022</td>
+                          <td>Churros de la empresa Yumis</td>
+                          <td>100</td>
+                          <td>500</td>
+                          
+                          <td>
                               <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><ii class="fas fa-edit"></ii></button>
                               <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><ii class="fas fa-trash"></ii></button>
                             </td>
                         </tr>
                         <tr>
-                            <td>183</td>
-                            <td>100</td>
-                            <td>152</td>
-                            <td>Churros de la empresa Ladys</td>
-                            <td>11-7-2014</td>
-                            <td>
+                            <tr>
+                          <td>183</td>
+                          <td>nancy</td>
+                          <td>camion kia</td>
+                          <td>comayagua</td>
+                          <td>11-7-2022</td>
+                          <td>15-7-2022</td>
+                          <td>Churros de la empresa Yumis</td>
+                          <td>100</td>
+                          <td>500</td>
+                          
+                          <td>
                               <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><ii class="fas fa-edit"></ii></button>
                               <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><ii class="fas fa-trash"></ii></button>
                             </td>
