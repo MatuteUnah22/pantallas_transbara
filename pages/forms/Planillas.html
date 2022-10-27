@@ -148,86 +148,102 @@
           <div class="container-fluid">
             <!-- EMPLEADOS -->
             <!-- /.row -->
-            <div class="row">
+            <div class="row"> 
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
-                    <!-- <h3 class="card-title">Mantenimiento de Empleados</h3> -->
-
-                    <!-------------------------------------------------------------------------------------------------->      
-                    <nav class="navbar navbar-light bg-light">
-                      <div class="container-fluid">
-                        <form class="d-flex">
-                          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                          <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        </form>
-                      </div>
-                    </nav>
-                    <!-------------------------------------------------------------------------------------------------->    
-                    <hr>
+                    <!--h3 class="card-title">Buscar</h3> -->
+            <!-------------------------------------------------------------------------------------------------->      
+            <nav class="navbar navbar-light bg-light">
+              <div class="container-fluid">
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </nav>
+            <!-------------------------------------------------------------------------------------------------->    
+            <hr>
 
                     <div class="card-tools">
                       <div class="input-group input-group-sm" style="width: 150px;">
-                        <button type="button" class="btn btn-primary float-right" data-bs-toggle="modal" data-bs-target="#miModal" ><i class="fas fa-plus"></i> Agregar Nomina</button>
+                          <button type="button" class="btn btn-primary float-right" data-bs-toggle="modal" data-bs-target="#miModal" ><i class="fas fa-plus"></i> Agregar Nomina</button>
                       </div>
 
-                      <!-- FORMULARIO PARA AGREGAR -->
-                
-                      <div class="modal fade" id="miModal" tabindex="-1" arial-hidden="true" aria-labelledby="modalTitle" data-backdrop="static" >
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="modalTitle" >Agregar Nueva Nomina</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              <div class="formulario">
-                                <div class="row">
-                                  <div class="col-12">
-                                    <h3></h3>
-                                    <hr>
-                                  </div>
-                                  <div class="col-12">
-                                    <form class="empleado">
-                                      <div class="row g-3">
-                                          <div class="col">
-                                            <label for="">Días Laborados</label> 
-                                            <input type="text" id="email_emple" class = "form-control"  placeholder = "Ingrese Dias Laborados.">
-                                          </div>
-                                          <div class="col">
-                                            <label for="">Kilometraje</label> 
-                                            <input type="text" id="cod_estado_civil" class = "form-control"  placeholder = "Ingrese Kilometraje">
-                                          </div>
+                       <!-- CODIGO PARA MODULAR LOS FORMS-->
+                          <div class="modal fade" id="miModal" tabindex="-1" arial-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static" >
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="modalTitle" >Agregar Nueva Nomina</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+ 
+                                   <!-- AGREGAR Nomina -->
+                                   <div class="formulario">
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <h3></h3>
+                                        <hr>
                                       </div>
-              
-                                      <div class="row g-3">
-                                          <div class="col">
+                                      <div class="col-12">
+                                        <form class="Nominas">
+                                          <div class="row g-3">
+                                            
+                                          </div>
+                                         
+                                          
+                                          <br>
+                                          <div class="row g-3">
+                                            <div class="col">
+                                              <label for="">Dias Laborados </label>
+                                              <input type="text" id="dias_laborados" class = "form-control"  placeholder = "Ingrese Dias Laborados.">
+                                            </div>
+                                            <div class="col">
+                                              <label for="">Kilometraje </label>
+                                              <input type="text" id="ckilometraje" class = "form-control"  placeholder = "Ingrese Kilometraje">
+                                            </div>
+                                          </div>
+                                          </div>                    
+                                          <div class="row g-3">
+                                            <div class="col">
                                               <label for="">Monto devengado</label>
-                                              <input type="text" id="email_emple" class = "form-control"  placeholder = "Ingrese Monto devengado.">
+                                              <input type="text" id="monto_devengado" class = "form-control"  placeholder = "Ingrese Monto devengado.">
+                                            </div>
+                                            <div class="col">
+                                              <label for=""> Monto Neto </label>
+                                              <input type="text" id="monto_neto" class = "form-control"  placeholder = "Ingrese Monto Neto">
+                                            </div>
                                           </div>
-                                          <div class="col">
-                                              <label for="">Monto Neto</label>
-                                              <input type="text" id="cod_estado_civil" class = "form-control"  placeholder = "Ingrese Monto Neto">
+                                          <br>              
+                                          <hr>
+                                          <div class="row g-3">
+                                            <br>
+                                            <div class="col">
+                                              <div class="btneliminar"></div>
+                                              <input type="submit"  value="Agregar Nomina" class="btn btn-success">
+                                            </div>
                                           </div>
+                                        </form>
                                       </div>
-                                      <br>
-
-                                      <div class="modal-footer">
-                                        <div class="btnagregar">
-                                          <input type="submit" id="btn_agregar"  value="Agregar Nomina" class = "btn btn-success">
-                                        </div>                                            
-                                      </div>
-                                    </form>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
+                          </div>                       
+                        </div>                       
+
+                        <div class="input-group-append">                          
                         </div>
                       </div>
                     </div>
-                  </div>
 
+                    <div class="card-tools">
+                      
+                    </div>
+                  </div>
                   <!-- /.card-header -->
                   <div class="card-body table-responsive p-0">
                     <table class="table table-hover text-nowrap">
@@ -239,7 +255,6 @@
                           <th>Dias Laborados</th>
                           <th>Monto Devengado</th>
                           <th>Monto Neto</th>
-                          <th>Acción</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -247,52 +262,127 @@
                           <td>001</td>
                           <td>4</td>
                           <td>7</td>
-                          <td>Chófer</td>
-                          <td>Salario Variable</td>
-                          <td>20</td>
+                          <td>6</td>
+                          <td>500</td>
+                          <td>79</td>
                           <td>
-                              <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
-                              <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
+                            <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
                           </td>
                         </tr>
                         <tr>
                           <td>183</td>
                           <td>7</td>
                           <td>3</td>
-                          <td>Chófer</td>
-                          <td>Salario Variable</td>
-                          <td>20</td>
+                          <td>7</td>
+                          <td>7</td>
+                          <td>89</td>
                           <td>
-                              <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
-                              <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
+                            <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
                           </td>
                         </tr>
                         <tr>
                           <td>183</td>
                           <td>8</td>
                           <td>1</td>
-                          <td>Chófer</td>
-                          <td>Salario Variable</td>
-                          <td>25</td>
+                          <td>5</td>
+                          <td>6</td>
+                          <td>256</td>
                           <td>
-                              <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
-                              <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
+                            <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
                           </td>
                         </tr>
                         <tr>
                           <td>183</td>
                           <td>9</td>
                           <td>8</td>
-                          <td>Chófer</td>
-                          <td>Salario Variable</td>
-                          <td>20</td>
+                          <td>9</td>
+                          <td>87</td>
+                          <td>09</td>
                           <td>
-                              <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
-                              <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
+                            <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
                           </td>
                         </tr>
                       </tbody>
                     </table>
+
+                    <div class="card-tools">
+                      
+
+                       <!-- CODIGO PARA MODULAR LOS FORMS-->
+                          <div class="modal fade" id="miModal" tabindex="-1" arial-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static" >
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="modalTitle" >Agregar Nueva Nomina</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+ 
+                                   <!-- AGREGAR Nomina -->
+                                   <div class="formulario">
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <h3></h3>
+                                        <hr>
+                                      </div>
+                                      <div class="col-12">
+                                        <form class="planilla">
+                                          <div class="row g-3">
+                                            
+                                          </div>
+                                         
+                                          
+                                          <br>
+                                          <div class="row g-3">
+                                            <div class="col">
+                                              <label for="">Dias Laborados </label>
+                                              <input type="text" id="email_emple" class = "form-control"  placeholder = "Ingrese Dias Laborados.">
+                                            </div>
+                                            <div class="col">
+                                              <label for="">Kilometraje </label>
+                                              <input type="text" id="cod_estado_civil" class = "form-control"  placeholder = "Ingrese Kilometraje">
+                                            </div>
+                                          </div>
+                                          </div>                    
+                                          <div class="row g-3">
+                                            <div class="col">
+                                              <label for="">Monto devengado</label>
+                                              <input type="text" id="email_emple" class = "form-control"  placeholder = "Ingrese Monto devengado.">
+                                            </div>
+                                            <div class="col">
+                                              <label for=""> Monto Neto </label>
+                                              <input type="text" id="cod_estado_civil" class = "form-control"  placeholder = "Ingrese Monto Neto">
+                                            </div>
+                                          </div>
+                                          <br>              
+                                          <hr>
+                                          <div class="row g-3">
+                                            <div class="col">
+                                              <div class="btnagregar"></div>
+                                              <input type="submit" id="btn_agregar"  value="Agregar Nomina" class = "btn btn-success">
+                                            </div>
+                                            <br>
+                                          </div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                       
+                        </div>                       
+
+                        <div class="input-group-append">                          
+                        </div>
+                      </div>
+                    </div>
+
+
                   </div>
                   <br>
                   <nav aria-label="Page navigation example">
@@ -307,14 +397,12 @@
                         <a class="page-link" href="#">Siguiente</a>
                       </li>
                     </ul>
-                  </nav>
                   <!-- /.card-body -->
                 </div>
                 <!-- /.card -->
               </div>
             </div>
-            <hr>
-            <!-- AGREGAR EMPLEADOS -->     
+            <br>       
           </div><!-- /.container-fluid -->
         </section>
         <!-- /.content -->
@@ -324,9 +412,7 @@
         <div class="float-right d-none d-sm-block">
           <b>Version</b> 1.0.0
         </div>
-        <div>
-          <strong>Copyright &copy; 2022-2023 <a href="#">Empresa de Transportes Barahona Morazán</a>.</strong> All rights reserved.
-        </div>        
+        <strong>Copyright &copy; 2022-2023 <a href="#">Empresa de Transportes Barahona Morazán</a>.</strong> All rights reserved.
       </footer>
 
       <!-- Control Sidebar -->
@@ -336,7 +422,11 @@
       <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
     <!-- jQuery -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
