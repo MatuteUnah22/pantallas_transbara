@@ -110,7 +110,7 @@
                 <a href="#" class="nav-link active">
                   <i class=" fas"></i>
                   <p>
-                    Nominas
+                    Deducciones
                     <i class="right fas fa-angle-left"></i>
                   </p>
                 </a>
@@ -118,7 +118,7 @@
                   <li class="nav-item">
                     <a href="#" class="nav-link ">
                       <i class="far fa-circle nav-icon text-info"></i>
-                      <p>Nominas</p>
+                      <p>Deducciones</p>
                     </a>
                   </li>                  
                 </ul>
@@ -191,51 +191,30 @@
                                     <form class="empleado">
                                         <div class="row g-3">
                                             <div class="col">
-                                                <label for="">Días Laborados</label> 
+                                                <label for="">Cod persona</label> 
                                                 <input type="text" id="cod_persona" class = "form-control"  placeholder = "Ingrese el código de persona.">
                                             </div>
                                             <div class="col">
-                                                <label for="">Kilometraje</label> 
-                                                <input type="date" id="cod_estado_civil" class = "form-control"  placeholder = "Ingrese Kilometraje">
+                                                <label for="">Fecha efectiva</label> 
+                                                <input type="date" id="fec_efectiva" class = "form-control"  placeholder = "Fecha efectiva">
                                             </div>
                                         </div>
-              
-                                        <div class="row g-3">
-                                          <div class="col">
-                                              <label for="">Monto devengado</label>
-                                              <input type="text" id="email_emple" class = "form-control"  placeholder = "Ingrese Monto devengado.">
-                                          </div>
-                                          <div class="col">
-                                              <label for="">Monto Neto</label>
-                                              <input type="text" id="cod_estado_civil" class = "form-control"  placeholder = "Ingrese Monto Neto">
-                                          </div>
-                                        </div>
+                                        
                                         <div class="row g-3">
                                             <div class="col">
-                                                <label for="">Días Laborados</label> 
-                                                <input type="text" id="email_emple" class = "form-control"  placeholder = "Ingrese Dias Laborados.">
+                                                <label for="">Monto a deducir</label>
+                                                <input type="text" id="monto_deducir" class = "form-control"  placeholder = "Ingrese Monto deducir.">
                                             </div>
                                             <div class="col">
-                                            <label for="">Kilometraje</label> 
-                                            <input type="text" id="cod_estado_civil" class = "form-control"  placeholder = "Ingrese Kilometraje">
-                                            </div>
-                                        </div>
-            
-                                        <div class="row g-3">
-                                            <div class="col">
-                                                <label for="">Monto devengado</label>
-                                                <input type="text" id="email_emple" class = "form-control"  placeholder = "Ingrese Monto devengado.">
-                                            </div>
-                                            <div class="col">
-                                                <label for="">Monto Neto</label>
-                                                <input type="text" id="cod_estado_civil" class = "form-control"  placeholder = "Ingrese Monto Neto">
+                                                <label for="">Descuento de Deduccion</label>
+                                                <input type="text" id="des_deduccion" class = "form-control"  placeholder = "Ingrese Descuento de Deduccion">
                                             </div>
                                         </div>
                                       <br>
 
                                       <div class="modal-footer">
                                         <div class="btnagregar">
-                                          <input type="submit" id="btn_agregar"  value="Agregar Nomina" class = "btn btn-success">
+                                          <input type="submit" id="btn_agregar"  value="Agregar Deduccion" class = "btn btn-success">
                                         </div>                                            
                                       </div>
                                     </form>
@@ -254,23 +233,19 @@
                     <table class="table table-hover text-nowrap">
                       <thead>
                         <tr>
-                          <th>Cod Nomina</th>
                           <th>Cod Persona</th>
-                          <th>Cod Deduccion</th>
-                          <th>Dias Laborados</th>
-                          <th>Monto Devengado</th>
-                          <th>Monto Neto</th>
+                          <th>Fecha Afectiva</th>
+                          <th>Monto a deducir</th>
+                          <th>Descuento de Deduccion</th>
                           <th>Acción</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td>001</td>
-                          <td>4</td>
-                          <td>7</td>
-                          <td>Chófer</td>
-                          <td>Salario Variable</td>
-                          <td>20</td>
+                          <td>5/2/2022</td>
+                          <td>777</td>
+                          <td>6</td>
                           <td>
                               <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
                               <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
@@ -278,11 +253,9 @@
                         </tr>
                         <tr>
                           <td>183</td>
-                          <td>7</td>
+                          <td>5/2/2022</td>
                           <td>3</td>
-                          <td>Chófer</td>
-                          <td>Salario Variable</td>
-                          <td>20</td>
+                          <td>6r</td>
                           <td>
                               <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
                               <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
@@ -290,11 +263,9 @@
                         </tr>
                         <tr>
                           <td>183</td>
-                          <td>8</td>
+                          <td>5/2/2022</td>
                           <td>1</td>
-                          <td>Chófer</td>
-                          <td>Salario Variable</td>
-                          <td>25</td>
+                          <td>8</td>
                           <td>
                               <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
                               <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
@@ -302,11 +273,9 @@
                         </tr>
                         <tr>
                           <td>183</td>
-                          <td>9</td>
+                          <td>5/2/2022</td>
                           <td>8</td>
-                          <td>Chófer</td>
-                          <td>Salario Variable</td>
-                          <td>20</td>
+                          <td>9</td>
                           <td>
                               <button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')"><i class="fas fa-edit"></i></button>
                               <button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')"><i class="fas fa-trash"></i></button>
