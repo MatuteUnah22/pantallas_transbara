@@ -24,20 +24,17 @@
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
-            <a href="../../index.html" class="nav-link">Home</a>
+            <a href="../../index.html" class="nav-link">INICIO</a>
           </li>
-          <li class="nav-item d-none d-sm-inline-block">
+          <!--li class="nav-item d-none d-sm-inline-block">
             <a href="#" class="nav-link">Contact</a>
           </li>
-        </ul>
+        </ul> -->
 
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
           <!-- Navbar Search -->
           <li class="nav-item">
-            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-              <i class="fas fa-search"></i>
-            </a>
             <div class="navbar-search-block">
               <form class="form-inline">
                 <div class="input-group input-group-sm">
@@ -61,9 +58,6 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-              <i class="fas fa-th-large"></i>
-            </a>
           </li>
         </ul>
       </nav>
@@ -90,53 +84,43 @@
           </div>
 
           <!-- SidebarSearch Form -->
-          <div class="form-inline">
-            <div class="input-group" data-widget="sidebar-search">
-              <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-              <div class="input-group-append">
-                <button class="btn btn-sidebar">
-                  <i class="fas fa-search fa-fw"></i>
-                </button>
-              </div>
-            </div>
-          </div>
 
-          <!-- Sidebar Menu -->
-          <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-              <!-- Add icons to the links using the .nav-icon class
-                  with font-awesome or any other icon font library -->
-              <li class="nav-item menu-open">
-                <a href="#" class="nav-link active">
-                  <i class=" fas"></i>
-                  <p>
-                    Personas
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="./Empleados.html" class="nav-link ">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Empleados</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./Usuarios.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Usuarios</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./Proveedores.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Proveedores</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>     
-            </ul>
-          </nav>
+                 <!-- Sidebar Menu -->
+                 <nav class="mt-2">
+                  <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+                        with font-awesome or any other icon font library -->
+                    <li class="nav-item menu-open">
+                      <a href="#" class="nav-link active">
+                        <i class=" fas"></i>
+                        <p>
+                          Personas
+                          <i class="right fas fa-angle-left"></i>
+                        </p>
+                      </a>
+                      <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                          <a href="./Usuarios.html" class="nav-link ">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Usuarios</p>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./Clientes.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Clientes</p>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./Proveedores.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Proveedores</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
           <!-- /.sidebar-menu -->
         </div>
         <!-- /.sidebar -->
@@ -149,13 +133,7 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1>Clientes</h1>
-              </div>
-              <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active">Clientes</li>
-                </ol>
+                <h1><strong>Clientes</strong></h1>
               </div>
             </div>
           </div><!-- /.container-fluid -->
@@ -170,16 +148,25 @@
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title">Mantenimiento de Clientes</h3>
+                    <!--h3 class="card-title">Buscar</h3> -->
+            <!-------------------------------------------------------------------------------------------------->
+            <nav class="navbar navbar-light bg-light">
+              <div class="container-fluid">
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </nav>
+              <!-------------------------------------------------------------------------------------------------->
+              <hr>
 
                     <div class="card-tools">
                       <div class="input-group input-group-sm" style="width: 150px;">
-                        
-                        <button type="button" class="btn btn-primary float-right" data-bs-toggle="modal" data-bs-target="#miModal" ><i class="fas fa-plus"></i> Agregar Cliente</button>
-                        
+                        <button type="button" class="btn btn-primary float-right" data-bs-toggle="modal" data-bs-target="#miModal" ><i class="fas fa-plus"></i> Agregar nuevo Cliente</button>
                       </div>
 
-                        <!-- CODIGO PARA MODULAR LOS FORMS-->
+                      <!-- CODIGO PARA MODULAR LOS FORMS-->
 
                       <div class="modal fade" id="miModal" tabindex="-1" arial-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static" >
                         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -189,8 +176,6 @@
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              
-                              <!-- AGREGAR NUEVA CARGA A ENVIAR -->
                               <div class="formulario">
                                 <div class="row">
                                   <div class="col-12">
@@ -198,72 +183,38 @@
                                     <hr>
                                   </div>
                                   <div class="col-12">
-                                    <form class="clientes"> 
-            
+                                    <form class="Clientes">
+
                                       <div class="row g-3">
                                         <div class="col">
-                                          <label for="">Nombre Cliente</label> 
-                                          <input type="text" id="nombre_cliente" class="form-control" placeholder="Ingrese el Nombre del cliente" aria-label="Nombre ">
+                                          <label for="">Nombre del Cliente</label>
+                                          <input type="text" id="nom_cliente" class="form-control" placeholder="Ingrese el nombre del nuevo cliente">
                                         </div>
                                         <div class="col">
-                                          <label for="">Tiene RTN</label> 
-                                          <br>
-                                          <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
-                                            <label class="form-check-label" for="inlineCheckbox1">Si</label>
-                                          </div>
-                                          <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
-                                            <label class="form-check-label" for="inlineCheckbox2">No</label>
-                                          </div>
+                                          <label for="">RTN del cliente</label>
+                                          <input type="text" id="rtn_cliente" class="form-control" placeholder="Ingrese el  RTN del cliente">
                                         </div>
                                       </div>
-            
+
                                       <div class="row g-3">
                                         <div class="col">
-                                          <label for="">ID Cliente</label>
-                                          <input type="text" id="num_ident_ciente" class = "form-control" placeholder="Ingrese el numero de ID del Cliente">
+                                            <label for="">Telefono del Cliente  </label>
+                                            <input type="text" id="tel_cliente" class = "form-control" placeholder="Ingrese el telefono del cliente sin espacion">
                                         </div>
                                         <div class="col">
-                                          <label for="">Tipo de Persona</label> 
-                                          <input type="text" id="cod_tipo_perso" class="form-control" placeholder="Ingrese el tipo de Persona">
-                                        </div>
-                                      </div>
-                                      
-                                      <div class="row g-3">
-                                        <div class="col">
-                                          <label for="">Estatus</label>
-                                          <input type="text" id="cod_estatus" class = "form-control" placeholder="Ingrese el Estatus del Cliente">
-                                        </div>
-                                        <div class="col">
-                                          <label for="">telefono</label>
-                                          <input type="text" id="telefono_cliente" class= "form-control" placeholder="Ingrese el Telefono del Cliente">
+                                            <label for="">Correo del Cliente</label>
+                                            <input type="text" id="correo_cliente" class="form-control" placeholder="Ingrese el correo del cliente">
                                         </div>
                                       </div>
-                                      
-                                      <div class="row g-3">
-                                        <div class="col">
-                                          <label for="">Email</label>
-                                          <input type="text" id="email_cliente" class = "form-control"  placeholder = "Ingrese el correo electronico del cliente">
-                                        </div>
-                                        <div class="col">
-                                          <label for="">Pais de Origen</label>
-                                          <input type="text" id="cod_pais" class= "form-control" placeholder="Ingrese el Pais de Origen del Cliente">
-                                      </div>
-                                      </div>
-            
-                                      <label for="">Direccion</label>
-                                      <input type="text" id="direccion_emple" class = "form-control"  placeholder = "Ingrese la Direccion del Empleado">
-                                      <br>
-                                    
+
+
+
+
                                       <div class="modal-footer">
                                         <div class="btnagregar">
                                           <input type="submit" id="btn_agregar"  value="Agregar Cliente" class = "btn btn-success">
                                         </div>
                                       </div>
-
-                                    <hr>
-
                                     </form>
                                   </div>
                                 </div>
@@ -272,115 +223,158 @@
                           </div>
                         </div>
                       </div>
-
-
                     </div>
                   </div>
+
                   <!-- /.card-header -->
                   <div class="card-body table-responsive p-0">
                     <table class="table table-hover text-nowrap">
                       <thead>
                         <tr>
-                          <th>Código Cliente</th>
-                          <th>Nombre Cliente</th>
-                          <th>RTN</th>
-                          <th>ID Cliente</th>
-                          <th>Tipo Persona</th>
-                          <th>Estatus</th>
-                          <th>Dirección</th>
-                          <th>Teléfono</th>                          
-                          <th>Email</th>
-                          <th>País Origen</th>
-                          <th>Fecha Creación</th>
-                          <th>Acciones</th>                         
+                          <th>No.</th>
+                          <th>Nombre del Cliente</th>
+                          <th>RTN del cliente</th>
+                          <th>Telefono del Cliente</th>
+                          <th>Correo del Cliente</th>
+
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>183</td>
-                          <td>John Mcklein Gonsalez Yeestas</td>
-                          <td>0212-21154-215845</td>
-                          <td>VIP</td>
-                          <td>D</td>
-                          <td>B</td>                          
+                          <td>01</td>
+                          <td>Sublimax</td>
+                          <td>02091987003862</td>
                           <td>El Carrizal</td>
-                          <td>2222-2222</td>
                           <td>google@gmail.com</td>
-                          <td>Honduras</td>
-                          <td>11-7-2014</td>
-                          <td>
-                            <button class="btn btn-outline-dark" onclick=""><ii class="fas fa-edit"></ii></button>
-                            <button class="btn btn-outline-danger" onclick=""><ii class="fas fa-trash"></ii></button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>183</td>
-                          <td>John Doe Ramirez Hernandez</td>
-                          <td>0212-21154-218754</td>
-                          <td>VIP</td>
-                          <td>D</td>
-                          <td>B</td>                          
-                          <td>El Pedregal</td>
-                          <td>2222-2222</td>
-                          <td>google@gmail.com</td>
-                          <td>EEUU</td>
-                          <td>11-7-2014</td>
+
                           <td>
                             <button class="btn btn-outline-dark" onclick=""><i class="fas fa-edit"></i></button>
                             <button class="btn btn-outline-danger" onclick=""><i class="fas fa-trash"></i></button>
                           </td>
                         </tr>
                         <tr>
-                          <td>183</td>
-                          <td>John Mcklein Gonsalez Yeestas</td>
-                          <td>0212-21154-875754</td>
-                          <td>VIP</td>
-                          <td>D</td>
-                          <td>B</td>                          
-                          <td>Cerro Grande</td>
-                          <td>2222-2222</td>
+                          <th>02</th>
+                          <td>Claro</td>
+                          <td>02091987003863</td>
+                          <td>El Pedregal</td>
                           <td>google@gmail.com</td>
-                          <td>Alemania</td>
-                          <td>11-7-2014</td>
+
                           <td>
-                            <button class="btn btn-outline-dark" onclick=""><ii class="fas fa-edit"></ii></button>
-                            <button class="btn btn-outline-danger" onclick=""><ii class="fas fa-trash"></ii></button>
+                            <button class="btn btn-outline-dark" onclick=""><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-outline-danger" onclick=""><i class="fas fa-trash"></i></button>
                           </td>
                         </tr>
                         <tr>
-                          <td>183</td>
-                          <td>John Doe Gonsalez Ramirez</td>
-                          <td>0212-21154-875754</td>
-                          <td>VIP</td>
-                          <td>D</td>
-                          <td>B</td>                          
-                          <td>Rio Grande</td>
-                          <td>2222-2222</td>
+                          <td>03</td>
+                          <td>Tigo</td>
+                          <td>02091987003864</td>
+                          <td>Cerro Grande</td>
                           <td>google@gmail.com</td>
-                          <td>España</td>
-                          <td>11-7-2014</td>
+
                           <td>
-                            <button class="btn btn-outline-dark" onclick=""><ii class="fas fa-edit"></ii></button>
-                            <button class="btn btn-outline-danger" onclick=""><ii class="fas fa-trash"></ii></button>
+                            <button class="btn btn-outline-dark" onclick=""><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-outline-danger" onclick=""><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>04</th>
+                          <td>La colonia</td>
+                          <td>02091987003868</td>
+                          <td>Rio Grande</td>
+                          <td>google@gmail.com</td>
+
+                          <td>
+                            <button class="btn btn-outline-dark" id="modalTitle" data-bs-dismiss ="modal" onclick=""><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-outline-danger" onclick=""><i class="fas fa-trash"></i></button>
                           </td>
                         </tr>
                       </tbody>
                     </table>
+
+                    <div class="modal fade" id="miModal" tabindex="-1" arial-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static" >
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitle" >Editar Cliente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="formulario">
+                              <div class="row">
+                                <div class="col-12">
+                                  <h3></h3>
+                                  <hr>
+                                </div>
+                                <div class="col-12">
+                                  <form class="proveedores">
+
+                                    <div class="row g-3">
+                                      <div class="col">
+                                        <label for="">Nombre del Cliente</label>
+                                        <input type="text" id="nom_cliente" class="form-control" placeholder="Ingrese el Nombre del Cliente">
+                                      </div>
+                                      <div class="col">
+                                        <label for="">rtn_cliente</label>
+                                        <input type="text" id="rtn_cliente" class="form-control" placeholder="Ingrese el numero la RTN del Cliente">
+                                      </div>
+                                    </div>
+
+                                    <div class="row g-3">
+                                      <div class="col">
+                                          <label for="">Telefono del Cliente</label>
+                                          <input type="text" id="tel_cliente" class = "form-control" placeholder="Ingrese el telefono del cliente">
+                                      </div>
+                                      <div class="col">
+                                          <label for="">Corre del Cliente</label>
+                                          <input type="text" id="correo_cliente" class="form-control" placeholder="Ingrese el correo electronico del Cliente">
+                                      </div>
+                                    </div>
+
+
+                                    <div class="modal-footer">
+                                      <div class="btnagregar">
+                                        <input type="submit" id="btn_agregar"  value="Agregar Cliente" class = "btn btn-success">
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
                   </div>
+                  <br>
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Siguiente</a>
+                      </li>
+                    </ul>
+                  </nav>
                   <!-- /.card-body -->
                 </div>
                 <!-- /.card -->
               </div>
             </div>
             <hr>
-            <!-- AGREGAR EMPLEADOS -->
+          </div><!-- /.container-fluid -->
         </section>
         <!-- /.content -->
       </div>
       <!-- /.content-wrapper -->
       <footer class="main-footer">
         <div class="float-right d-none d-sm-block">
-          <b>Version</b> 1.0.0
+        <b>Version</b> 1.0.0
         </div>
         <strong>Copyright &copy; 2022-2023 <a href="#">Empresa de Transportes Barahona Morazán</a>.</strong> All rights reserved.
       </footer>
@@ -392,9 +386,7 @@
       <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
     <!-- jQuery -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
@@ -404,4 +396,5 @@
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
   </body>
+
 </html>
