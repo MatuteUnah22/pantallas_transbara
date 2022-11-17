@@ -19,6 +19,14 @@
     </head>
 
     <body class="hold-transition login-page">
+        <!-- Agregamos este link para registrarnos -->
+    <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+        <a href="./register.html" class="ml-4 text-sm text-gray-700 underline">Registrarse</a>
+
+         <!--@if (Route::has('register'))
+            <a href="{{ route('register') }}" class="ms-4 text-muted">Register</a>
+        @endif --> 
+    </div>
         <div class="login-box">
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
@@ -31,7 +39,7 @@
 
             <form action="../../index3.html" method="post">
                 <div class="input-group mb-3">
-                <input type="email" class="form-control" placeholder="Email">
+                <input type="email" class="form-control" placeholder="Email" required>
                 <div class="input-group-append">
                     <div class="input-group-text">
                     <span class="fas fa-envelope"></span>
@@ -39,11 +47,15 @@
                 </div>
                 </div>
                 <div class="input-group mb-3">
-                <input type="password" class="form-control" placeholder="Password">
+                <input type="password" class="form-control" placeholder="Password" required>
+                <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
                 <div class="input-group-append">
                     <div class="input-group-text">
                     <span class="fas fa-lock"></span>
                     </div>
+                    
                 </div>
                 </div>
                 <div class="row">
